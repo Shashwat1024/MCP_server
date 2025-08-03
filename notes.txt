@@ -1,0 +1,10 @@
+React Fundamentals: React is a JavaScript library for building user interfaces, particularly web applications. It uses a component-based architecture where UI is broken down into reusable components.
+JSX Syntax: JSX allows you to write HTML-like syntax in JavaScript. It gets transpiled to React.createElement() calls. Remember to use className instead of class and camelCase for attributes.
+useState Hook: Used for managing local component state. Example: const [count, setCount] = useState(0). Always use the setter function to update state, never mutate state directly.
+useEffect Hook: Handles side effects like API calls, subscriptions, or DOM manipulation. Runs after render by default. Use dependency array to control when it runs: useEffect(() => {}, [dependencies]).
+Props: Short for properties, props are how data is passed from parent to child components. Props are read-only and should never be modified by the receiving component.
+Component Lifecycle: Functional components with hooks replace class component lifecycle methods. useEffect can handle componentDidMount, componentDidUpdate, and componentWillUnmount patterns.
+Key Prop: When rendering lists, always provide a unique key prop to each element. This helps React identify which items have changed, improving performance. Use stable, unique identifiers, not array indices when possible.
+Event Handling: React uses SyntheticEvents that wrap native events. Event handlers receive the event object as parameter. Use arrow functions or bind to preserve 'this' context in class components.
+Conditional Rendering: Use JavaScript expressions for conditional rendering. Common patterns: {condition && <Component />}, {condition ? <A /> : <B />}, or early returns in functional components.
+React Developer Tools: Essential browser extension for debugging React applications. Allows you to inspect component hierarchy, props, state, and performance. Available for Chrome and Firefox.
